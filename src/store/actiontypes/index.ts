@@ -21,12 +21,12 @@ interface IRightPosition {
 
 interface IRightWeight {
   type: ActionType.GET_RIGHT_WEIGHT;
-  payload:  number;
+  payload:  string;
 }
 
 interface ILeftWeight {
   type: ActionType.GET_LEFT_WEIGHT;
-  payload: number;
+  payload: string;
 }
 
 interface IHeight {

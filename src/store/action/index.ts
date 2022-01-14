@@ -1,7 +1,6 @@
 import { ActionType } from "../actionTypes";
 
 
-
 export function getLeftPosition(value: number) {
   return {
     type: ActionType.GET_LEFT_POSITION,
@@ -16,14 +15,14 @@ export function getRightPosition(value: number) {
   };
 }
 
-export function getLeftWeight(value: number) {
+export function getLeftWeight(value: string) {
   return {
     type: ActionType.GET_LEFT_WEIGHT,
     payload: value
   };
 }
 
-export function getRightWeight(value: number) {
+export function getRightWeight(value: string) {
   return {
     type: ActionType.GET_RIGHT_WEIGHT,
     payload: value

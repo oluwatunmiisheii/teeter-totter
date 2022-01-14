@@ -3,13 +3,12 @@ import { ActionType, Action } from "../actionTypes";
 interface IState {
   leftPosition: number;
   rightPosition: number;
-  rightWeight: number;
-  leftWeight: number;
+  rightWeight: string;
+  leftWeight: string;
   innerHeight: number;
 }
 
 const initialState: IState = {} as IState;
-
 const initialAction: Action = {
   type: ActionType.DEFAULT,
   payload: null
@@ -46,3 +45,5 @@ export const reducer = (state: IState = initialState, action: Action = initialAc
       return state;
   }
 }
+
+export type RootState = ReturnType<typeof reducer>
