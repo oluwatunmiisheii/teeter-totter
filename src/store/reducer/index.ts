@@ -1,4 +1,4 @@
-import { ActionType, Action } from "../actionTypes";
+import { ActionType, Action } from "../actionTypes/index";
 
 interface IState {
   leftPosition: number;
@@ -9,6 +9,7 @@ interface IState {
 }
 
 const initialState: IState = {} as IState;
+
 const initialAction: Action = {
   type: ActionType.DEFAULT,
   payload: null
